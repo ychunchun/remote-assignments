@@ -1,0 +1,86 @@
+.title {
+  color: yellow;
+}
+.banana {
+  width: 100px;
+  height: 100px;
+}
+.menu {
+  background-color: silver;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.logoname {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.service {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.musttry {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(129, 40, 30);
+  margin: 30px;
+}
+
+.welcome_message {
+  background-color: wheat;
+  display: flex;
+  padding: 50px;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.welcome_text {
+  display: flex;
+  justify-content: center;
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+}
+
+.graph {
+  width: 150px;
+  height: 150px;
+}
+
+.plan {
+  display: flex;
+  justify-content: center;
+  background-color: palegoldenrod;
+  margin: 10px;
+}
+
+.show {
+  background-color: honeydew;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.showbox {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 800px) {
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+}
