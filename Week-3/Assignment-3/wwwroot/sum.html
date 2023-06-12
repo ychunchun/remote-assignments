@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sum Calculation</title>
+  </head>
+  <body>
+    <input type="number" id="numberInput" placeholder="Enter a number" />
+    <button onclick="calculateSum()">Calculate</button>
+    <p id="result"></p>
+
+    <script>
+      function calculateSum() {
+        var number = document.getElementById("numberInput").value;
+        var url = `http://localhost:5055/data?number=${number}`;
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", url, true);
+        xhr.onreadystatechange = function () {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            var result = JSON.parse(xhr.responseText);
+            document.getElementById("result").innerText = "Result: " + result;
+          }
+        };
+        xhr.send();
+      }
+    </script>
+  </body>
+</html>

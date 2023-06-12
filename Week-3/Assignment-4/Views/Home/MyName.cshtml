@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "MyName";
+}
+
+
+@if (!string.IsNullOrEmpty(ViewBag.UserName))
+{
+    <p>Hello, @ViewBag.UserName!</p>
+}
+else
+{
+    <form method="post" action="/trackName">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Submit</button>
+    </form>
+}

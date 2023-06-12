@@ -1,0 +1,25 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/yuchun/Library/CloudStorage/OneDrive-元智大學/Appwork school/remote-assignments/Week-3/Assignment-3/wwwroot/sum.html",
+      "PackagePath": "staticwebassets/sum.html"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.Assignment-3.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.Assignment-3.props",
+      "PackagePath": "build\\Assignment-3.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Assignment-3.props",
+      "PackagePath": "buildMultiTargeting\\Assignment-3.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Assignment-3.props",
+      "PackagePath": "buildTransitive\\Assignment-3.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
