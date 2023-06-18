@@ -1,0 +1,48 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Sign Up</h2>
+
+@if (ViewBag.ErrorMessage != null)
+{
+    <div class="alert alert-danger">
+        @ViewBag.ErrorMessage
+    </div>
+}
+
+<form asp-controller="Home" asp-action="SignUp" method="post">
+    <!-- Sign Up 表單內容 -->
+    <div class="form-group">
+    <label for="Email">Email</label>
+    <input type="email" id="Email" name="Email" class="form-control" />
+
+</div>
+<div class="form-group">
+    <label for="Password">Password</label>
+    <input type="password" id="Password" name="Password" class="form-control" />
+   </div>
+
+    <button type="submit" class="btn btn-primary">Sign Up</button>
+</form>
+
+<hr />
+
+<h2>Sign In</h2>
+
+<form asp-controller="Home" asp-action="SignIn" method="post">
+    <!-- Sign In 表單內容 -->
+    <div class="form-group">
+    <label for="Email">Email</label>
+    <input type="email" id="Email" name="Email" class="form-control" />
+    
+</div>
+<div class="form-group">
+    <label for="Password">Password</label>
+    <input type="password" id="Password" name="Password" class="form-control" />
+ </div>
+
+    <button type="submit" class="btn btn-primary">Sign In</button>
+</form>
+
+
